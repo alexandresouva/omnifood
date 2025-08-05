@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
-export class Header {}
+export class Header {
+  protected readonly links = [
+    { label: 'How it works', href: '#' },
+    { label: 'Meals', href: '#' },
+    { label: 'Testimonials', href: '#' },
+    { label: 'Pricing', href: '#' }
+  ] satisfies { label: string; href: string }[];
+}

@@ -1,1 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 @import 'tailwindcss';
+
+@theme {
+  --font-rubik: 'Rubik', sans-serif;
+
+  --color-text-default: #555;
+  --color-text-strong: #333;
+
+  --color-bg-surface: #fdf2e9;
+  --color-bg-body: #fff;
+
+  --color-primary: #e67e22;
+  --color-primary-hover: #cf711f;
+  --color-primary-focus: #e67d2280;
+}
+
+*:focus {
+  @apply shadow-[0_0_0_0.5rem_var(--color-primary-focus)] outline-none;
+}
+
+body {
+  @apply font-rubik text-text-default leading-none font-normal;
+}
