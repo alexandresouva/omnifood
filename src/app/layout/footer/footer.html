@@ -1,1 +1,43 @@
-<p>footer works!</p>
+<footer class="border-t border-gray-200 py-32">
+  <div
+    class="mx-auto grid max-w-7xl grid-cols-[1.5fr_1.5fr_1fr_1fr_1fr] gap-x-16 px-8"
+  >
+    <div class="flex flex-col">
+      <a href="#" class="mb-8" aria-label="Omnifood">
+        <img class="h-5.5" alt="Omnifood logo" src="images/omnifood-logo.png" />
+      </a>
+
+      <ul class="flex gap-6" aria-label="Omnifood social media">
+        @for (media of socialMedia; track $index) {
+          <li>
+            <a mutedLink [href]="media.href">
+              <fa-icon
+                size="xl"
+                [icon]="media.icon"
+                attr.aria-label="{{ media.name }}"
+              />
+            </a>
+          </li>
+        }
+      </ul>
+
+      <p class="text-text-muted mt-auto text-sm leading-6.5">
+        Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+      </p>
+    </div>
+    <div>
+      <h3 class="mb-10 text-lg font-medium">Contact us</h3>
+      <address class="leading-6.5 not-italic">
+        <p class="mb-6">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+        <a mutedLink href="tel:415-201-6370"> 415-201-6370 </a>
+        <a mutedLink href="mailto:hello@omnifood.com">
+          hello&#64;omnifood.com
+        </a>
+      </address>
+    </div>
+
+    <app-link-section title="Account" [links]="companyPages.account" />
+    <app-link-section title="Company" [links]="companyPages.company" />
+    <app-link-section title="Resources" [links]="companyPages.resources" />
+  </div>
+</footer>
