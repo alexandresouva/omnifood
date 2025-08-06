@@ -17,6 +17,24 @@
   --color-primary-focus: #e67d2280;
 }
 
+@layer components {
+  .heading-primary {
+    @apply text-text-strong mb-8 text-5xl leading-[1.05] font-bold tracking-[-0.5px];
+  }
+
+  .btn {
+    @apply inline-block rounded-lg px-8 py-4 text-xl leading-none font-semibold transition-all duration-300;
+  }
+
+  .btn-full {
+    @apply bg-primary hover:bg-primary-hover focus:bg-primary-focus text-white;
+  }
+
+  .btn-outline {
+    @apply text-text-default hover:bg-bg-surface bg-white shadow-[inset_0_0_0_3px_#fff];
+  }
+}
+
 *:focus {
   @apply shadow-[0_0_0_0.5rem_var(--color-primary-focus)] outline-none;
 }

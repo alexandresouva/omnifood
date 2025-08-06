@@ -1,0 +1,37 @@
+<section class="bg-bg-surface pt-12 pb-24">
+  <div class="mx-auto grid max-w-7xl grid-cols-2 items-center gap-24 px-8">
+    <div>
+      <h1 class="heading-primary">
+        A healthy meal delivered to your door, every single day
+      </h1>
+      <p class="mb-12 text-xl leading-8">
+        The smart 365-days-per-year food subscription that will make you eat
+        healthy again. Tailored to your personal tastes and nutritional needs.
+      </p>
+      <a href="#" class="btn btn-full mr-4">Start eating well</a>
+      <a href="#" class="btn btn-outline">Learn more &darr;</a>
+      <div class="mt-20 flex items-center gap-4">
+        <div class="flex">
+          @for (id of customerImagesId; let idx = $index; track $index) {
+            <img
+              class="border-bg-surface -mr-4 h-12 w-12 rounded-full border-2"
+              [class.-mr-4]="idx < customerImagesId.length - 1"
+              [src]="'images/customers/customer-' + id + '.jpg'"
+              alt="Customer portrait"
+            />
+          }
+        </div>
+        <p class="text-lg font-semibold">
+          <span class="text-primary-hover font-bold">250,000+</span> meals
+          delivered last year!
+        </p>
+      </div>
+    </div>
+
+    <img
+      src="images/hero.png"
+      class="w-full"
+      alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+    />
+  </div>
+</section>
