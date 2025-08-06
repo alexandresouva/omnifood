@@ -22,6 +22,14 @@
     @apply text-text-strong mb-8 text-5xl leading-[1.05] font-bold tracking-[-0.5px];
   }
 
+  .heading-secondary {
+    @apply text-text-strong mb-24 text-5xl leading-[1.2] font-bold tracking-[-0.5px];
+  }
+
+  .heading-tertiary {
+    @apply text-text-strong mb-8 text-3xl leading-[1.2] font-bold tracking-[-0.5px];
+  }
+
   .btn {
     @apply inline-block rounded-lg px-8 py-4 text-xl leading-none font-semibold transition-all duration-300;
   }
