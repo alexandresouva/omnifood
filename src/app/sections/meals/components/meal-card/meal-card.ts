@@ -6,8 +6,8 @@ import {
   Star,
   LucideAngularModule
 } from 'lucide-angular';
-import { MealTag } from '../meal-tag/meal-tag';
-import { Meal } from '../../models/meal.model';
+import { MealTag } from '@sections/meals/components/meal-tag/meal-tag';
+import { Meal } from '@sections/meals/models/meal.model';
 
 @Component({
   selector: 'app-meal-card',

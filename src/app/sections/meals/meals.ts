@@ -2,9 +2,9 @@ import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 
 import { Check, LucideAngularModule } from 'lucide-angular';
-import { MealCard } from './components/meal-card/meal-card';
-import { MealsService } from './services/meals-service';
-import { OmniTitle } from '../../ui/omni-title/omni-title';
+import { MealCard } from '@sections/meals/components/meal-card/meal-card';
+import { MealsService } from '@sections/meals/services/meals-service';
+import { OmniTitle } from '@ui/omni-title/omni-title';
 
 @Component({
   selector: 'app-meals',

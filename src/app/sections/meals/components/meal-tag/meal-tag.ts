@@ -1,5 +1,6 @@
 import { Component, computed, input } from '@angular/core';
-import { MealType } from '../../models/meal.model';
+
+import { MealType } from '@sections/meals/models/meal.model';
 
 const mealClassMap: Record<MealType, string> = {
   vegetarian: 'bg-green-400',

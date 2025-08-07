@@ -1,6 +1,7 @@
 import { Component, input } from '@angular/core';
-import { Link } from '../../models/link.model';
-import { MutedLink } from '../muted-link/muted-link';
+
+import { Link } from '@layout/footer/models/link.model';
+import { MutedLink } from '@layout/footer/components/muted-link/muted-link';
 
 @Component({
   selector: 'app-link-section',

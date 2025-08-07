@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { OmniTitle } from '../../ui/omni-title/omni-title';
-import { OmniButton } from '../../ui/omini-button/omni-button';
+import { OmniTitle } from '@ui/omni-title/omni-title';
+import { OmniButton } from '@ui/omini-button/omni-button';
 
 @Component({
   selector: 'app-hero',

@@ -1,10 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 
-import { Testimonial } from './components/testimonial/testimonial';
-import { GalleryService } from './services/gallery-service';
-import { TestimonialsService } from './services/testimonials-service';
-import { OmniTitle } from '../../ui/omni-title/omni-title';
+import { Testimonial } from '@sections/testimonials/components/testimonial/testimonial';
+import { GalleryService } from '@sections/testimonials/services/gallery-service';
+import { TestimonialsService } from '@sections/testimonials/services/testimonials-service';
+import { OmniTitle } from '@ui/omni-title/omni-title';
 
 @Component({
   selector: 'app-testimonials',
