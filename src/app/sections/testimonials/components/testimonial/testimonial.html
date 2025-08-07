@@ -1,11 +1,13 @@
 <figure>
   <img
-    class="mb-3 h-16 w-16 rounded-full"
+    class="mb-3 h-13 w-13 rounded-full lg:h-16 lg:w-16"
     alt="Portrait of {{ testimonial().name }}"
     [src]="testimonial().imageUrl"
   />
-  <blockquote class="mb-4 text-lg leading-[1.8]">
+  <blockquote class="mb-4 text-sm leading-[1.8] lg:text-lg">
     {{ testimonial().text }}
   </blockquote>
-  <p class="text-[#6f6f6f]">&mdash; {{ testimonial().name }}</p>
+  <p class="text-sm text-[#6f6f6f] sm:text-base">
+    &mdash; {{ testimonial().name }}
+  </p>
 </figure>
