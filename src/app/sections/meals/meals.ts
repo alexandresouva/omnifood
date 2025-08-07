@@ -4,10 +4,11 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { Check, LucideAngularModule } from 'lucide-angular';
 import { MealCard } from './components/meal-card/meal-card';
 import { MealsService } from './services/meals-service';
+import { OmniTitle } from '../../ui/omni-title/omni-title';
 
 @Component({
   selector: 'app-meals',
-  imports: [LucideAngularModule, MealCard],
+  imports: [LucideAngularModule, MealCard, OmniTitle],
   templateUrl: './meals.html'
 })
 export class Meals {

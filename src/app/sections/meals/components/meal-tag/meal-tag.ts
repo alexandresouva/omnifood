@@ -1,7 +1,7 @@
 import { Component, computed, input } from '@angular/core';
 import { MealType } from '../../models/meal.model';
 
-const mealTypeClassMap: Record<MealType, string> = {
+const mealClassMap: Record<MealType, string> = {
   vegetarian: 'bg-green-400',
   vegan: 'bg-lime-400',
   paleo: 'bg-yellow-300'
@@ -23,6 +23,6 @@ export class MealTag {
   type = input.required<MealType>();
 
   protected readonly tagColor = computed(
-    () => mealTypeClassMap[this.type()] || 'bg-gray-300'
+    () => mealClassMap[this.type()] || 'bg-gray-300'
   );
 }

@@ -1,22 +1,20 @@
 <section class="py-24">
-  <div class="mx-auto max-w-7xl px-8 text-center">
-    <span
-      class="text-primary-hover mb-4 block font-medium tracking-[0.75px] uppercase"
-    >
-      Meals
-    </span>
-    <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
+  <div class="container text-center">
+    <span omniTitle type="subheading" class="mb-4"> Meals </span>
+    <h2 omniTitle type="secondary" class="mb-24">
+      Omnifood AI chooses from 5,000+ recipes
+    </h2>
   </div>
 
   <div
-    class="margin-bottom-md mx-auto mb-12 grid max-w-7xl grid-cols-3 gap-x-24 gap-y-16 px-8"
+    class="margin-bottom-md container mb-12 grid grid-cols-3 gap-x-24 gap-y-16"
   >
     @for (meal of highlightedMeals(); track $index) {
       <app-meal-card [meal]="meal" />
     }
 
     <div>
-      <h3 class="heading-tertiary">Works with any diet:</h3>
+      <h3 omniTitle type="tertiary" class="mb-8">Works with any diet:</h3>
       <ul class="flex flex-col gap-4" aria-label="Meal types">
         @for (meal of mealsTypes; track $index) {
           <li class="flex items-center gap-4 text-lg">
@@ -28,7 +26,7 @@
     </div>
   </div>
 
-  <div class="mx-auto max-w-7xl px-8 text-center text-lg">
+  <div class="container text-center text-lg">
     <a
       href="#"
       class="text-primary border-primary hover:text-primary-hover inline-block border-b pb-0.5 leading-none transition-all duration-300 hover:border-transparent"

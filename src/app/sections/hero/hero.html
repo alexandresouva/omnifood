@@ -1,15 +1,15 @@
 <section class="bg-bg-surface pt-12 pb-24">
-  <div class="mx-auto grid max-w-7xl grid-cols-2 items-center gap-24 px-8">
+  <div class="container grid grid-cols-2 items-center gap-24">
     <div>
-      <h1 class="heading-primary">
+      <h1 omniTitle type="primary" class="mb-8">
         A healthy meal delivered to your door, every single day
       </h1>
       <p class="mb-12 text-xl leading-8">
         The smart 365-days-per-year food subscription that will make you eat
         healthy again. Tailored to your personal tastes and nutritional needs.
       </p>
-      <a href="#" class="btn btn-full mr-4">Start eating well</a>
-      <a href="#" class="btn btn-outline">Learn more &darr;</a>
+      <a omniButton class="mr-4" href="#">Start eating well</a>
+      <a omniButton format="outline" href="#">Learn more &darr;</a>
       <div class="mt-20 flex items-center gap-4">
         <div class="flex">
           @for (id of customerImagesId; let idx = $index; track $index) {

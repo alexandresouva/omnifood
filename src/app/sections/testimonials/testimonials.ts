@@ -4,10 +4,11 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { Testimonial } from './components/testimonial/testimonial';
 import { GalleryService } from './services/gallery-service';
 import { TestimonialsService } from './services/testimonials-service';
+import { OmniTitle } from '../../ui/omni-title/omni-title';
 
 @Component({
   selector: 'app-testimonials',
-  imports: [Testimonial],
+  imports: [Testimonial, OmniTitle],
   templateUrl: './testimonials.html'
 })
 export class Testimonials {
