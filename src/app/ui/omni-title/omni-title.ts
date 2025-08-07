@@ -4,7 +4,7 @@ type TitleType = 'primary' | 'secondary' | 'tertiary' | 'subheading';
 
 const titleTypeClassMap: Record<TitleType, string> = {
   primary:
-    'text-text-strong text-5xl leading-[1.05] font-bold tracking-[-0.5px]',
+    'text-text-strong text-4xl xl:text-5xl leading-[1.05] font-bold tracking-[-0.5px]',
   secondary:
     'text-text-strong text-5xl leading-[1.2] font-bold tracking-[-0.5px]',
   tertiary:

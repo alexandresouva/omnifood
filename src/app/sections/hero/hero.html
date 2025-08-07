@@ -1,27 +1,27 @@
-<section class="bg-bg-surface pt-12 pb-24">
-  <div class="container grid grid-cols-2 items-center gap-24">
-    <div>
-      <h1 omniTitle type="primary" class="mb-8">
+<section class="bg-bg-surface pt-6 pb-20 lg:pt-12 lg:pb-24">
+  <div class="omni-container grid items-center gap-14 lg:grid-cols-2 lg:gap-24">
+    <div class="text-center lg:text-start">
+      <h1 omniTitle type="primary" class="mb-6 lg:mb-8">
         A healthy meal delivered to your door, every single day
       </h1>
-      <p class="mb-12 text-xl leading-8">
+      <p class="mb-9 leading-8 md:text-lg lg:mb-12 xl:text-xl">
         The smart 365-days-per-year food subscription that will make you eat
         healthy again. Tailored to your personal tastes and nutritional needs.
       </p>
       <a omniButton class="mr-4" href="#">Start eating well</a>
       <a omniButton format="outline" href="#">Learn more &darr;</a>
-      <div class="mt-20 flex items-center gap-4">
-        <div class="flex">
+      <div class="mt-7 flex items-center gap-4 lg:mt-20">
+        <div class="flex [min-width:max-content]">
           @for (id of customerImagesId; let idx = $index; track $index) {
             <img
-              class="border-bg-surface -mr-4 h-12 w-12 rounded-full border-2"
+              class="border-bg-surface h-10 w-10 rounded-full border-2 lg:h-12 lg:w-12"
               [class.-mr-4]="idx < customerImagesId.length - 1"
               [src]="'images/customers/customer-' + id + '.jpg'"
-              alt="Customer portrait"
+              alt="Portrait of customer"
             />
           }
         </div>
-        <p class="text-lg font-semibold">
+        <p class="text-sm font-semibold md:text-base xl:text-lg">
           <span class="text-primary-hover font-bold">250,000+</span> meals
           delivered last year!
         </p>
@@ -30,8 +30,8 @@
 
     <img
       src="images/hero.png"
-      class="w-full"
-      alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+      class="mx-auto w-3/5 lg:w-full"
+      alt="Woman enjoying food, meals in storage omni-container, and food bowls on a table"
     />
   </div>
 </section>

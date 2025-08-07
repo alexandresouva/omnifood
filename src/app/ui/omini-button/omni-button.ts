@@ -15,7 +15,7 @@ const buttonClassMap: Record<ButtonFormat, string> = {
   template: `<ng-content></ng-content>`,
   host: {
     class:
-      'inline-block rounded-lg px-8 py-4 text-xl leading-none font-semibold transition-all duration-300',
+      'inline-block rounded-lg px-6 py-4 sm:px-7 sm:py-3.5 lg:px-8 lg:py-4 lg:text-xl leading-none font-semibold transition-all duration-300',
     '[class]': 'buttonClass()'
   }
 })
