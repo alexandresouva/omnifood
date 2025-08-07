@@ -1,5 +1,5 @@
 <section class="py-24">
-  <div class="container text-center">
+  <div class="omni-container text-center">
     <span omniTitle type="subheading" class="mb-4"> Meals </span>
     <h2 omniTitle type="secondary" class="mb-24">
       Omnifood AI chooses from 5,000+ recipes
@@ -7,7 +7,7 @@
   </div>
 
   <div
-    class="margin-bottom-md container mb-12 grid grid-cols-3 gap-x-24 gap-y-16"
+    class="margin-bottom-md omni-container mb-12 grid grid-cols-3 gap-x-24 gap-y-16"
   >
     @for (meal of highlightedMeals(); track $index) {
       <app-meal-card [meal]="meal" />
@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="container text-center text-lg">
+  <div class="omni-container text-center text-lg">
     <a
       href="#"
       class="text-primary border-primary hover:text-primary-hover inline-block border-b pb-0.5 leading-none transition-all duration-300 hover:border-transparent"
