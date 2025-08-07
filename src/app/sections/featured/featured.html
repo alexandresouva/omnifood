@@ -1,14 +1,14 @@
 <section class="pt-12 pb-8">
   <div class="omni-container">
     <h2
-      class="mb-6 text-center text-sm font-medium tracking-[0.75px] text-[#888] uppercase"
+      class="mb-6 text-center text-xs font-medium tracking-[0.75px] text-[#888] uppercase sm:text-sm"
     >
       As featured in
     </h2>
-    <div class="flex justify-around">
+    <div class="flex flex-wrap justify-around gap-4">
       @for (logo of companiesLogos; track $index) {
         <img
-          class="h-8 opacity-50 brightness-0"
+          class="h-4 opacity-50 brightness-0 sm:h-4 md:h-6 lg:h-8"
           [src]="logo.src"
           [alt]="logo.alt"
         />
