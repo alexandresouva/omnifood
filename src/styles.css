@@ -30,6 +30,10 @@
     @apply text-text-strong mb-8 text-3xl leading-[1.2] font-bold tracking-[-0.5px];
   }
 
+  .subheading {
+    @apply text-primary-hover mb-4 block font-medium tracking-[0.75px] uppercase;
+  }
+
   .btn {
     @apply inline-block rounded-lg px-8 py-4 text-xl leading-none font-semibold transition-all duration-300;
   }

@@ -1,0 +1,11 @@
+<figure>
+  <img
+    class="mb-3 h-16 w-16 rounded-full"
+    alt="Portrait of {{ testimonial().name }}"
+    [src]="testimonial().imageUrl"
+  />
+  <blockquote class="mb-4 text-lg leading-[1.8]">
+    {{ testimonial().text }}
+  </blockquote>
+  <p class="text-[#6f6f6f]">&mdash; {{ testimonial().name }}</p>
+</figure>
