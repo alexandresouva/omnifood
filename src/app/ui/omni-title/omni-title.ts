@@ -6,10 +6,11 @@ const titleTypeClassMap: Record<TitleType, string> = {
   primary:
     'text-text-strong text-4xl xl:text-5xl leading-[1.05] font-bold tracking-[-0.5px]',
   secondary:
-    'text-text-strong text-5xl leading-[1.2] font-bold tracking-[-0.5px]',
+    'text-text-strong text-3xl lg:text-4xl xl:text-5xl leading-[1.2] font-bold tracking-[-0.5px]',
   tertiary:
-    'text-text-strong text-3xl leading-[1.2] font-bold tracking-[-0.5px]',
-  subheading: 'text-primary-hover block font-medium tracking-[0.75px] uppercase'
+    'text-text-strong text-xl lg:text-2xl xl:text-3xl leading-[1.2] font-bold tracking-[-0.5px]',
+  subheading:
+    'text-primary-hover text-sm block font-medium tracking-[0.75px] uppercase'
 };
 
 @Component({

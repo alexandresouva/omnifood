@@ -2,7 +2,7 @@
   class="overflow-hidden rounded-xl shadow-[0_2.4rem_4.8rem_#00000013] transition-all duration-400 hover:-translate-y-5"
 >
   <img [src]="meal().imageUrl" class="w-full" [alt]="meal().name" />
-  <div class="px-12 pt-8 pb-12">
+  <div class="p-8 pt-6 lg:p-12 lg:pt-8">
     @if (meal().type && meal().type.length > 0) {
       <div class="mb-3 flex gap-1">
         @for (type of meal().type; track $index) {
@@ -10,23 +10,23 @@
         }
       </div>
     }
-    <p class="text-text-strong mb-8 text-2xl font-semibold">
+    <p class="text-text-strong mb-6 text-xl font-semibold xl:text-2xl">
       {{ meal().name }}
     </p>
     <ul class="flex flex-col gap-5">
-      <li class="flex items-center gap-4 text-lg">
+      <li class="flex items-center gap-4 xl:text-lg">
         <lucide-icon [img]="icons.flame" class="text-primary" />
         <span>
           <strong>{{ meal().calories }}</strong> calories
         </span>
       </li>
-      <li class="flex items-center gap-4 text-lg">
+      <li class="flex items-center gap-4 xl:text-lg">
         <lucide-icon [img]="icons.utensilsCrossed" class="text-primary" />
         <span>
           NutriScore &reg; <strong>{{ meal().nutriscore }}</strong>
         </span>
       </li>
-      <li class="flex items-center gap-4 text-lg">
+      <li class="flex items-center gap-4 xl:text-lg">
         <lucide-icon [img]="icons.star" class="text-primary" />
         <span>
           <strong>{{ meal().rating }}</strong> rating ({{

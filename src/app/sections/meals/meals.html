@@ -1,23 +1,25 @@
-<section class="py-24">
+<section class="py-20 sm:py-24">
   <div class="omni-container text-center">
     <span omniTitle type="subheading" class="mb-4"> Meals </span>
-    <h2 omniTitle type="secondary" class="mb-24">
+    <h2 omniTitle type="secondary" class="mb-10 md:mb-18 lg:mb-24">
       Omnifood AI chooses from 5,000+ recipes
     </h2>
   </div>
 
   <div
-    class="margin-bottom-md omni-container mb-12 grid grid-cols-3 gap-x-24 gap-y-16"
+    class="omni-container mb-12 grid gap-10 sm:grid-cols-2 sm:gap-y-16 lg:grid-cols-3 xl:gap-x-24"
   >
     @for (meal of highlightedMeals(); track $index) {
       <app-meal-card [meal]="meal" />
     }
 
-    <div>
+    <div
+      class="col-span-full flex flex-col justify-self-center text-center md:text-start lg:col-span-1 lg:justify-self-start"
+    >
       <h3 omniTitle type="tertiary" class="mb-8">Works with any diet:</h3>
       <ul class="flex flex-col gap-4" aria-label="Meal types">
         @for (meal of mealsTypes; track $index) {
-          <li class="flex items-center gap-4 text-lg">
+          <li class="flex items-center gap-4 text-sm sm:text-lg">
             <lucide-icon [img]="checkIcon" class="text-primary" />
             <span>{{ meal }}</span>
           </li>
@@ -29,7 +31,7 @@
   <div class="omni-container text-center text-lg">
     <a
       href="#"
-      class="text-primary border-primary hover:text-primary-hover inline-block border-b pb-0.5 leading-none transition-all duration-300 hover:border-transparent"
+      class="text-primary border-primary hover:text-primary-hover inline-block border-b pb-0.5 text-sm leading-none transition-all duration-300 hover:border-transparent sm:text-base"
     >
       See all recipes &rarr;
     </a>
