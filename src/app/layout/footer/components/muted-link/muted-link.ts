@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `<ng-content></ng-content>`,
   host: {
     class:
-      'hover:text-text-default text-text-muted inline-block transition-all duration-300'
+      'hover:text-text-default text-text-muted inline-block transition-all duration-300 text-xs sm:text-sm lg:text-base'
   }
 })
 export class MutedLink {}

@@ -19,7 +19,7 @@
 
 @layer components {
   .omni-container {
-    @apply mx-auto max-w-7xl px-6.5 sm:px-12;
+    @apply mx-auto max-w-7xl px-6.5 sm:px-10 lg:px-12;
   }
 }
 

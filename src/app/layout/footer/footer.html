@@ -1,8 +1,14 @@
-<footer class="border-t border-gray-200 py-32">
-  <div class="omni-container grid grid-cols-[1.5fr_1.5fr_1fr_1fr_1fr] gap-x-16">
-    <div class="flex flex-col">
-      <a href="#" class="mb-8" aria-label="Omnifood">
-        <img class="h-5.5" alt="Omnifood logo" src="images/omnifood-logo.png" />
+<footer class="border-t border-gray-200 py-24 lg:py-32">
+  <div
+    class="omni-container grid grid-cols-6 gap-12 md:grid-cols-[1.5fr_1.5fr_1fr_1fr_1fr] lg:gap-16"
+  >
+    <div class="col-span-3 flex flex-col lg:col-span-1">
+      <a href="#" class="mb-6" aria-label="Omnifood">
+        <img
+          class="h-4.5 lg:h-5.5"
+          alt="Omnifood logo"
+          src="images/omnifood-logo.png"
+        />
       </a>
 
       <ul class="flex gap-6" aria-label="Omnifood social media">
@@ -19,13 +25,13 @@
         }
       </ul>
 
-      <p class="text-text-muted mt-auto text-sm leading-6.5">
+      <p class="text-text-muted mt-auto text-xs leading-6.5 sm:text-sm">
         Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
       </p>
     </div>
-    <div>
-      <h3 class="mb-10 text-lg font-medium">Contact us</h3>
-      <address class="leading-6.5 not-italic">
+    <div class="col-span-3 lg:col-span-1">
+      <h3 class="mb-8 text-sm font-medium lg:mb-10 lg:text-lg">Contact us</h3>
+      <address class="text-xs leading-6.5 not-italic sm:text-sm lg:text-base">
         <p class="mb-6">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
         <a mutedLink href="tel:415-201-6370"> 415-201-6370 </a>
         <a mutedLink href="mailto:hello@omnifood.com">
@@ -34,8 +40,20 @@
       </address>
     </div>
 
-    <app-link-section title="Account" [links]="companyPages.account" />
-    <app-link-section title="Company" [links]="companyPages.company" />
-    <app-link-section title="Resources" [links]="companyPages.resources" />
+    <app-link-section
+      class="col-span-2 row-start-1 lg:col-span-1 lg:row-auto"
+      title="Account"
+      [links]="companyPages.account"
+    />
+    <app-link-section
+      class="col-span-2 row-start-1 lg:col-span-1 lg:row-auto"
+      title="Company"
+      [links]="companyPages.company"
+    />
+    <app-link-section
+      class="col-span-2 row-start-1 lg:col-span-1 lg:row-auto"
+      title="Resources"
+      [links]="companyPages.resources"
+    />
   </div>
 </footer>

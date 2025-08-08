@@ -8,7 +8,9 @@ import { MutedLink } from '@layout/footer/components/muted-link/muted-link';
   imports: [MutedLink],
   template: `
     <nav [attr.aria-labelledby]="id">
-      <h3 class="mb-10 text-lg font-medium" [id]="id">{{ title() }}</h3>
+      <h3 class="mb-8 text-sm font-medium lg:mb-10 lg:text-lg" [id]="id">
+        {{ title() }}
+      </h3>
       <ul class="flex flex-col gap-6">
         @for (link of links(); track $index) {
           <li>
