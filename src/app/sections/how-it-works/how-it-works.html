@@ -1,0 +1,15 @@
+<section class="py-18 lg:py-24">
+  <div class="omni-container">
+    <span omniTitle type="subheading" class="mb-4">How it works</span>
+    <h2 omniTitle type="secondary" class="mb-10 md:mb-18 lg:mb-24">
+      Your daily dose of health in 3 simple steps
+    </h2>
+  </div>
+
+  <div class="omni-container grid items-center gap-14">
+    @for (step of steps(); track $index) {
+      @let position = $index % 2 === 0 ? 'left' : 'right';
+      <app-screen-step [imagePosition]="position" [step]="step" />
+    }
+  </div>
+</section>

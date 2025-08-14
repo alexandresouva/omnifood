@@ -1,0 +1,21 @@
+<div class="grid items-center gap-4 sm:grid-cols-2">
+  <div
+    [class]="imagePosition() === 'left' ? 'row-start-2 sm:row-span-full' : ''"
+  >
+    @let numberFormatted = step().step < 10 ? `0${step().step}` : step().step;
+    <p class="mb-3 text-6xl font-semibold text-[#ddd]">{{ numberFormatted }}</p>
+    <h3 omniTitle type="tertiary" class="mb-8">
+      {{ step().title }}
+    </h3>
+    <p class="text-sm leading-[1.8] lg:text-lg">
+      {{ step().description }}
+    </p>
+  </div>
+
+  <div
+    class="relative flex items-center justify-center"
+    [class.row-start-1]="imagePosition() === 'right'"
+  >
+    <img [src]="step().imageUrl" class="w-3/10" [alt]="step().imageAlt" />
+  </div>
+</div>
